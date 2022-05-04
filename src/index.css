@@ -1,13 +1,117 @@
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #e2f3f5;
+  color: #0e153a;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input, textarea {
+  border: none;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+textarea {
+  height: 300px;
+  resize: none;
+}
+
+input {
+  padding: 1rem 0;
+  background: #3d5af1;
+  color: white;
+  cursor: pointer;
+}
+
+
+.results {
+  padding: 1rem 0;
+}
+
+.flex {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+/* .flex div {
+  text-align: center;
+} */
+.flex div h3 {
+  font-size: 1.5rem;
+}
+.flex div h3.white {
+  color: #3d5af1;
+}
+.flex div h3.black {
+  color: #0e153a;
+}
+.inaccuracy {
+  color: #c94e4e;
+}
+.mistake {
+  color: #713045;
+}
+.blunder {
+  color: #d72323;
+}
+
+
+.moves {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+h2 {
+  margin: 0;
+  margin-top: 2rem;
+}
+
+.moves div {
+  padding: 0.5rem 0;
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  color: #0e153a;
+}
+
+.moves div span {
+  color: #6fb7e4;
+}
+
+.moves div p {
+  font-weight: 500;
+}
+
+.loading {
+  font-size: 1.5rem;
+  color: #3d5af1;
+  text-align: center;
+  padding-top: 10rem;
 }
